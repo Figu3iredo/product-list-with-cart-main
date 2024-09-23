@@ -15,5 +15,9 @@ export class Product{
         this._imageUrl = imageUrl;
     }
 
+    get price() {
+        return this._price;
+    }
+
 
 }
