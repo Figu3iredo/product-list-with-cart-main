@@ -4,13 +4,14 @@ import { Cart } from "./entities/cart";
 
 
 const product1 = new Product("banana",  "fruta", 10, "http://example.com");
-const product2 = new Product("maçã",  "fruta", 5, "http://example.com");
+product1.incrementQuantity();
+product1.incrementQuantity();
+
+const product2 = new Product("maça",  "fruta", 5, "http://example.com");
+product2.incrementQuantity();
+product2.incrementQuantity(); 
 
 
-const cart = new Cart();
+console.log(Cart);
 
-cart.addToCart(product1);
-cart.addToCart(product2);
-console.log(cart);
-console.log(cart.products.length)
-console.log(cart.total)
+
