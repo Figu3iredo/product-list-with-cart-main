@@ -1,11 +1,21 @@
 
+
 @import url("./components.scss");
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+$primary-color: hsl(14, 86%, 42%);
+$text-color-1: hsl(14, 65%, 9%);
+$text-color-2: hsl(7, 20%, 60%);
+
 
 @font-face {
   font-family: "Red Hat Text";
   src: url("../../assets/fonts/RedHatText-VariableFont_wght.ttf")
     format("truetype");
 }
+
 
 * {
   box-sizing: border-box;
