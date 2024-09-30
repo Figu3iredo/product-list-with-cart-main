@@ -23,6 +23,12 @@ export class Product{
         return this._quantity;
     }
 
+
+toHtml(){
+    const productListHtml = document.getElementById("product - list");
+    
+}
+
     get id(){
         return this._id;
     }
