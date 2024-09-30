@@ -1,14 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-
-@import url("./components.scss");
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
-
-$primary-color: hsl(14, 86%, 42%);
-$text-color-1: hsl(14, 65%, 9%);
-$text-color-2: hsl(7, 20%, 60%);
-
+// @use "_components";
 
 @font-face {
   font-family: "Red Hat Text";
@@ -16,30 +10,27 @@ $text-color-2: hsl(7, 20%, 60%);
     format("truetype");
 }
 
-
 * {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
 }
-.container{
-  width: 300px; 
-  height: 350px;
+
+.container {
+  width: 200px;
+  height: 250px;
   background-color: grey;
   position: relative;
 }
 
-.button{
-  background-color: red;
+.button {
   padding: 15px 30px;
   position: absolute;
-  bottom: 0px ;
+  bottom: 0px;
   left: 50%;
-  transform: translate(-50%,50%);
-
+  transform: translate(-50%, 50%);
 }
 
 body {
   font-family: "Red Hat Text", sans-serif;
 }
-

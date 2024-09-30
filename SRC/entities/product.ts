@@ -19,6 +19,14 @@ export class Product{
         
     }
 
+    get quantity(){
+        return this._quantity;
+    }
+
+    get id(){
+        return this._id;
+    }
+
         get total(){
             return this._total;
         }
